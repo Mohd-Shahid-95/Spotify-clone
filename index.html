@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="logo.png"/>
+    <link rel="stylesheet"href="style.css"/>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option">
+                        <img src="library_icon.png">
+                        <a href="#">Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <p class="pd1">Create your first playlist</p>
+                        <p class="pd2">It's we will help you</p>
+                        <button class="badges">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <p class="pd1">Let's find some podcasts to follow</p>
+                        <p class="pd2">We'll keep you updated on new episodes</p>
+                        <button class="badges">Browse podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-opt">
+                    <img src="backward_icon.png"/>
+                    <img src="forward_icon.png"class="hide"/>
+                </div>
+                <div class="sticky-nav-bt">
+                    <button class="badges hide">Explore Premium</button>
+                    <button class="badges-bg"><i class="fa-regular fa-circle-down">Install App</i></button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card1img.jpeg"/>
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+            </div>
+            <h2>Trending Songs</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card2img.jpeg"/>
+                    <p class="card-title">Top 50 - Song</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg"/>
+                    <p class="card-title">Top 50 - Rahat</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="card4img.jpeg"/>
+                    <p class="card-title">Top 50 - World</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="card5img.jpeg"/>
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="card3img.jpeg"/>
+                    <p class="card-title">Top 50 - RF Ali</p>
+                    <p class="card-info">Your daily updates of the most played tracks</p>
+                </div>
+                <div class="card">
+                    <img src="card2img.jpeg"/>
+                    <p class="card-title">Top 50 - Global</p>
+                </div>
+            </div>
+            <h2>Featured Charts Songs</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="card5img.jpeg"/>
+                    <p class="card-title">Top 50 - Song</p>
+                </div>
+                <div class="card">
+                    <img src="card6img.jpeg"/>
+                    <p class="card-title">Top 50 - India</p>
+                </div>
+                <div class="card">
+                    <img src="card1img.jpeg"/>
+                    <p class="card-title">Top 50 - Global</p>
+                </div>
+            </div>
+            <div class="footer">
+                <p>made by shahid khan&hearts;</p>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album"></div>
+            <div class="player">
+                <div class="player-control">
+                    <img src="player_icon1.png" class="player-control-icon"/>
+                    <img src="player_icon2.png" class="player-control-icon"/>
+                    <img src="player_icon3.png" class="player-control-icon"id="er"/>
+                    <img src="player_icon4.png" class="player-control-icon"/>
+                    <img src="player_icon5.png" class="player-control-icon"/>
+                </div>
+                <div class="playback-bar">
+                    <span class="current">00:00</span>
+                    <input type="range" min="00" max="100" class="player-bar">
+                    <span class="total">03:30</span>
+                </div>
+            </div>
+            <div class="control"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
